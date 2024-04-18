@@ -1,0 +1,103 @@
+.filters {
+  width: 1400px; /* Adjust width as needed */
+  padding: 10px;
+}
+
+.filter-dropdown {
+  margin-top: 11px;
+}
+
+.product-cards {
+  flex-grow: 1; /* Product cards section takes remaining space */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filter-dropdown label {
+  display: block;
+  margin-bottom: -3px;
+  padding: 2px;
+}
+
+.filter-dropdown select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.checkbox-container {
+  display: flex; /* Use flexbox to align checkboxes and labels in the same line */
+  flex-direction: column; /* Display checkboxes and labels vertically */
+}
+
+.checkbox-container > div {
+  margin-right: 20px; /* Add spacing between checkboxes and labels */
+  display: flex; /* Align checkbox and label vertically */
+  align-items: center; /* Align items vertically */
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 5px; /* Add spacing between checkbox and label */
+}
+
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.up-down-butoon {
+  margin-top: 6px;
+}
+
+.unselect-all-button {
+  font-family: Simplon Norm;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+}
+
+.label-dropdown {
+    font-weight: 500;
+}
+
+.image-one {
+  margin-bottom: 15px;
+}
+
+.image-one:hover {
+  transform: scale(1.05); /* Increase size on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+  cursor: pointer;
+}
+
+.dropdown-container {
+  top: 0;
+  left: -100%; /* Initially off-screen to the left */
+  width: 300px; /* Adjust width as needed */
+  height: 100%;
+  background-color: #fff;
+  transition: left 0.3s ease; /* Smooth transition for left property */
+}
+
+.dropdown-container.open {
+  left: 0; /* Move to the left edge of the screen when open */
+}
+
+.button-one-self {
+  margin-bottom: 10px;
+  margin-top: 6px;
+}
+
+@media only screen and (max-width: 767px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+

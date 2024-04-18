@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* components/ProductCard.module.css */
+
+/* components/ProductCard.module.css */
+
+.product-card {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: calc(50% - 20px); /* Adjust width for mobile */
+  }
+}
+
+
+.product-cards.three-in-row .product-card {
+  width: calc(33.33% - 20px);
+}
+
+.product-cards.four-in-row .product-card {
+  width: calc(25% - 20px);
+}
+
+/* pages/plp.module.css */
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .product-list {
+    justify-content: center;
+  }
+}
+
+.product-name {
+  font-family: Simplon Norm;
+  font-weight: 700;
+  max-width: 312px;
+}
+
+.pricing-tag {
+  font-family: Simplon Norm;
+  font-weight: 400;
+  max-width: 312px;
+  color: #888792;
+}
+
+/* plp.module.css */
+
+.product-list-page {
+  display: flex;
+}
+
+.show-filter-block {
+  display: flex;
+}
+
+.dropdown-button {
+  margin-left: 200px;
+}
+
+/* Add this CSS to your existing stylesheet */
+
+/* Hide the elements in mobile view */
+/* Add this CSS to your existing stylesheet */
+
+/* Show two products in a row in mobile view */
+@media (max-width: 768px) {
+  .product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-cards .product-card {
+    width: calc(50% - 20px);
+  }
+
+  .three-in-row .product-card {
+    width: calc(50% - 20px);
+  }
+
+  .product-cards.three-in-row .product-card {
+    width: calc(50% - 20px);
+  }
+  
+  .product-cards.four-in-row .product-card {
+    width: calc(50% - 20px);
+  }
+
+  .product-name {
+    font-size: 10px;
+  }
+  .pricing-tag {
+    font-size: 10px;
+  }
+}
+
+/* Add this CSS to your existing stylesheet */
+
+/* Hide the elements in mobile view */
+@media (max-width: 768px) {
+  .show-filter-block,
+  .filters {
+    display: none;
+  }
+}
+
+.hide-show {
+  text-decoration: underline;
+  color: gray;
+}
+
+
+
+
